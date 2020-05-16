@@ -1,0 +1,31 @@
+.nav {
+	&__list {
+		display: flex;
+	}
+
+	&__item {
+		margin-right: 1.6rem;
+
+		&:not(:last-child)::after {
+			content: '';
+			display: inline-block;
+			vertical-align: middle;
+			width: 4px;
+			height: 4px;
+			background-color: $color-black;
+			margin-left: 1.7rem;
+		}
+	}
+
+	&__link {
+		color: $color-black;
+		font-weight: 700;
+		font-family: sans-serif;
+		text-transform: uppercase;
+		transition: color .3s ease-in-out;
+
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
